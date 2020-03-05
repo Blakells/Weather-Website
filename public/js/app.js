@@ -1,6 +1,7 @@
 //console.log('Client side JS file loaded');
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
+const loc = document.querySelector('#location');
 const messageOne = document.querySelector('#msg1');
 const messageTwo = document.querySelector('#msg2');
 const messageThree = document.querySelector('#msg3');
@@ -13,6 +14,7 @@ weatherForm.addEventListener('submit', (e) => {
             if(data.error) {
                 messageOne.textContent = data.error;
             } else {
+                loc.innerHTML = data.location;
                 messageOne.innerHTML = `<i class="fas fa-temperature-high"></i>` + data.temperature +'';
                 // messageOne.textContent= 'Daily Forecast: ' + data.dailySummary;
                 // messageOne.innerHTML += `<i class="fas fa-temperature-high"></i>`;
