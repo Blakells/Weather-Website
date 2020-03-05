@@ -1,0 +1,87 @@
+body {
+    background: radial-gradient(circle, rgba(238,174,202,1) 20%, rgba(148,187,233,1) 100%);
+    color: darkslategray;
+    font-family: 'Playfair Display';
+    max-width: 650px;
+    margin: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-content {
+    flex-grow: 1;
+}
+.instruction {
+    font-size: 30px;
+    font-weight: bold;
+}
+.info {
+    font-size: 30px;
+    font-weight: bold;
+}
+footer {
+    color: lightslategrey;
+    border-top: 1px solid lightslategrey;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+header {
+    font-family: 'Playfair Display';
+    margin-top: 16px;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+header a {
+    color: slateblue;
+    margin-right: 16px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.portrait {
+    max-width: 100%;
+}
+input {
+    border: 1px solid lightgrey;
+    padding: 8px;
+    border-radius: 25px;
+}
+button {
+    cursor: pointer;
+    border: 1px solid lightgray;
+    background: lightslategray;
+    color:white;
+    padding:8px;
+    border-radius: 25px;
+}
+#msg1 {
+    font-size: 75px;
+    font-weight: bold;
+    text-align: left;
+    margin-left:25%;
+}
+#msg2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+#msg3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.fa-temperature-high, .fa-tint, .fa-cloud-meatball {
+    font-size: 80px;
+    padding-right: 20px;
+}
+.fa-percent {
+    font-size: 30px;
+    padding-right: 10px;
+}
+.fa-sun {
+    float: right;
+    font-size: 150px;
+    color: lightslategray
+}
