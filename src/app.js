@@ -11,6 +11,7 @@ const partialsPath = path.join(__dirname, '../templates/partials');
 
 // Serve static directory
 app.use(express.static(publicDir));
+const PORT = process.env.PORT || 3000;
 
 // Setup hbs engine and views location
 app.set('view engine', 'hbs');
@@ -85,6 +86,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server up and running')
+app.listen(PORT, () => {
+    console.log('Server up and running on port ' + PORT)
 })
